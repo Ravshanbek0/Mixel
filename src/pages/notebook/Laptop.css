@@ -1,0 +1,177 @@
+.laptop {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+.laptop-main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+}
+.laptop-main-box img{
+    width: 360px;
+    object-fit: contain;
+    height: 350px;
+}
+.laptop-imgs {
+    width: 360px;
+    overflow: hidden;
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+    height: 78px;
+    justify-content: space-between;
+    object-fit: contain;
+}
+
+.laptop-right {
+    display: flex;
+    gap: 30px;
+}
+
+
+.laptop-right-left h1 {
+    width: 500px;
+    margin-bottom: 47px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.laptop-sum {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+
+.laptop-sum h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.laptop-sum-icons {
+    display: flex;
+    align-items: center;
+    gap: 69px;
+}
+
+.laptop-sum-icons span:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.laptop-right-left>p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #909090;
+    margin-bottom: 44px;
+}
+
+.laptop-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.laptop-button1 {
+    width: 161px;
+    height: 54px;
+    background: #ED3729;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.laptop-button2 {
+    width: 268px;
+    height: 54px;
+    border: none;
+    color: #fff;
+    background: #202020;
+    border-radius: 5px;
+}
+
+.laptop-top-infos {
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    display: flex;
+    gap: 70px;
+    padding: 15px;
+    margin-top: 54px;
+}
+.laptop-top-infos h5 span{
+    width: 50px;
+    height: 25px;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: red;
+}
+.laptop-top-infos p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #909090;
+    width: 170px;
+}
+
+.laptop-top-infos h5 {
+    width: 280px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.right2-extras {
+    width: 365px;
+    height: 161px;
+    border-radius: 5px;
+    background: linear-gradient(0deg, #F7F7F7, #F7F7F7),
+        linear-gradient(0deg, #F2F2F2, #F2F2F2);
+    border: 1px solid #F2F2F2;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.right2-extras h1 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.right2-extras p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #909090;
+}
+
+.right2-extras a {
+    color: #2F80ED;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}

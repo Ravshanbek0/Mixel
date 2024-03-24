@@ -1,0 +1,226 @@
+.telephones-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.telephones-nav>h1 {
+    font-size: 20px;
+    margin-right: -380px;
+}
+
+.filter-sen {
+    display: flex;
+    gap: 34px;
+}
+
+.filter-sen span {
+    display: flex;
+    color: #909090;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.boxe-icon {
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #909090;
+}
+
+.boxe-icon span:hover {
+    color: #ED3729;
+    cursor: pointer;
+}
+
+.telephones-cards {
+    display: flex;
+    margin-top: 35px;
+}
+
+.telephones-left-box {
+    width: 360px;
+    height: auto;
+    border: 0px, 0px, 0px, 0px;
+    border-style: solid;
+    border-color: #F2F2F2;
+}
+
+.tel-box1 {
+    padding: 0 30px;
+}
+
+.tel-box1 p {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 13px;
+}
+
+.tel-box1 div {
+    display: flex;
+}
+
+.tel-box1 div input {
+    width: 150px;
+    height: 50px;
+    padding: 13px 15px;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    outline: none;
+}
+
+.zabrat {
+    border: 1px solid #ED3729;
+    width: 300px;
+    height: 50px;
+    padding: 13px 20px;
+    border-radius: 5px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.telephones-right-main-box {
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* border: 1px solid; */
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.active {
+    display: block;
+}
+
+.red-none-border {
+    border: none;
+}
+
+.telephone-more-box {
+    padding-left: 20px;
+}
+
+.tel-box12 {
+    padding: 0 30px;
+    margin-top: 30px;
+}
+
+.tel-box12 h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 33px;
+
+}
+
+.tel-box12 button {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 39px;
+    padding: 12px, 51px, 12px, 51px;
+    border-radius: 5px;
+    border: none;
+    background: #ED3729;
+    color: #fff;
+    margin-bottom: 37px;
+}
+
+.ewe {
+    display: block;
+    /* margin-top: 60px; */
+    margin: 0 auto;
+    border: 2px solid #ED3729;
+    width: 271px;
+    height: 39px;
+    background-color: #fff;
+    color: #ED3729;
+    border-radius: 5px;
+}
+
+.tel-more-box-nav {
+    margin-bottom: 40px;
+}
+
+.tel-more-box-nav h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 80px;
+}
+
+.tel-nav-infos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.tel-nav-infos p {
+    width: auto;
+    padding: 4px 32px;
+    height: 33px;
+    border-radius: 17px;
+    border: 1px solid #BDBDBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.tel-nav-infos p:hover {
+    background-color: #BDBDBD;
+    transition: all .2s;
+}
+
+.zabrat-p {
+    margin-left: 15px;
+}
+
+.telefon-more {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.disable-p {
+    height: auto;
+    overflow: hidden;
+}
+
+.disable-p.disabled .disable-p::after {
+    content: "";
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    background: rgb(251, 251, 251);
+    background: linear-gradient(90deg, rgba(251, 251, 251, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 59%, rgba(255, 255, 255, 1) 72%, rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 1) 100%);
+}
+
+.disabled {
+    position: relative;
+    height: 50px;
+}
+
+.gar-cards{
+    justify-content: center;
+    /* border: 1px solid;    */
+    display: flex;
+    padding: 0;
+}
