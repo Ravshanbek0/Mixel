@@ -253,7 +253,7 @@ function Home({ setLoader }) {
             <img src="Mixel/public/imgs/lg.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="././public/imgs/samsung.png" alt="" />
+            <img src="/./public/imgs/samsung.png" alt="" />
           </div>
           <div className="brend-box">
             <img src="/public/imgs/artel.png" alt="" />
