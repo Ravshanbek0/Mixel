@@ -256,7 +256,7 @@ function Home({ setLoader }) {
             <img src="/./public/imgs/samsung.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="/public/imgs/artel.PNG" alt="" />
+            <img src="./public/imgs/artel.png" alt="" />
           </div>
         </div>
       </div>
