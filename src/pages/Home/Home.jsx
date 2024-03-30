@@ -106,20 +106,20 @@ function Home({ setLoader }) {
         <div className="category">
           <div>
             <h1>Компьютеры</h1>
-            <img src="/public/imgs/laptop.png" alt="" />
+            <img src="./public/imgs/laptop.png" alt="" />
           </div>
           <div>
             <h1>Телефоны, <br />
               планшеты</h1>
-            <img src="/public/imgs/phone.png" alt="" />
+            <img src="./public/imgs/phone.png" alt="" />
           </div>
           <div>
             <h1>Ноутбуки</h1>
-            <img src="/public/imgs/laptops2.png" alt="" />
+            <img src="./public/imgs/laptops2.png" alt="" />
           </div>
           <div>
             <h1>Товары для офиса</h1>
-            <img src="/public/imgs/camera.png" alt="" />
+            <img src="./public/imgs/camera.png" alt="" />
           </div>
 
         </div>
@@ -182,7 +182,7 @@ function Home({ setLoader }) {
                   <p>Совершенно новый дисплей Super Retina с диагональю 5,8 дюйма, который удобно лежит в руке и потрясающие выглядит, — это и есть iPhone X.</p>
                 </div>
                 <div className='sell-between'>
-                  <img className='sell-img' src="/public/imgs/sell.png" alt="" />
+                  <img className='sell-img' src="./public/imgs/sell.png" alt="" />
                 </div>
                 <div className='sell-right'>
                   <h1>1 250 900 Сум</h1>
@@ -197,7 +197,7 @@ function Home({ setLoader }) {
                   <p>Совершенно новый дисплей Super Retina с диагональю 5,8 дюйма, который удобно лежит в руке и потрясающие выглядит, — это и есть iPhone X.</p>
                 </div>
                 <div className='sell-between'>
-                  <img className='sell-img' src="../public/imgs/sell.png" alt="" />
+                  <img className='sell-img' src="./public/imgs/sell.png" alt="" />
                 </div>
                 <div className='sell-right'>
                   <h1>1 250 900 Сум</h1>
@@ -244,16 +244,16 @@ function Home({ setLoader }) {
         </div>
         <div className="brend">
           <div className="brend-box">
-            <img src="Mixel/public/imgs/brend.png" alt="" />
+            <img src="./public/imgs/brend.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="Mixel/public/imgs/mi.png" alt="" />
+            <img src="./public/imgs/mi.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="Mixel/public/imgs/lg.png" alt="" />
+            <img src="./public/imgs/lg.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="/./public/imgs/samsung.png" alt="" />
+            <img src="./public/imgs/samsung.png" alt="" />
           </div>
           <div className="brend-box">
             <img src="./public/imgs/artel.png" alt="" />
