@@ -244,19 +244,19 @@ function Home({ setLoader }) {
         </div>
         <div className="brend">
           <div className="brend-box">
-            <img src="Mixel/public/imgs/brend.png" alt="" />
+            <img src="/public/imgs/brend.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="Mixel/public/imgs/mi.png" alt="" />
+            <img src="/public/imgs/mi.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="Mixel/public/imgs/lg.png" alt="" />
+            <img src="/public/imgs/lg.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="/./public/imgs/samsung.png" alt="" />
+            <img src="/public/imgs/samsung.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="./public/imgs/artel.png" alt="" />
+            <img src="/public/imgs/artel.png" alt="" />
           </div>
         </div>
       </div>
