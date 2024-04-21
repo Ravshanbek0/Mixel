@@ -182,7 +182,7 @@ function Home({ setLoader }) {
                   <p>Совершенно новый дисплей Super Retina с диагональю 5,8 дюйма, который удобно лежит в руке и потрясающие выглядит, — это и есть iPhone X.</p>
                 </div>
                 <div className='sell-between'>
-                  <img className='sell-img' src="/public/imgs/sell.png" alt="" />
+                  <img className='sell-img' src="./public/imgs/sell.png" alt="" />
                 </div>
                 <div className='sell-right'>
                   <h1>1 250 900 Сум</h1>
@@ -197,7 +197,7 @@ function Home({ setLoader }) {
                   <p>Совершенно новый дисплей Super Retina с диагональю 5,8 дюйма, который удобно лежит в руке и потрясающие выглядит, — это и есть iPhone X.</p>
                 </div>
                 <div className='sell-between'>
-                  <img className='sell-img' src="../public/imgs/sell.png" alt="" />
+                  <img className='sell-img' src="./public/imgs/sell.png" alt="" />
                 </div>
                 <div className='sell-right'>
                   <h1>1 250 900 Сум</h1>
@@ -244,6 +244,16 @@ function Home({ setLoader }) {
         </div>
         <div className="brend">
           <div className="brend-box">
+            <img src="/public/imgs/brend.png" alt="" />
+          </div>
+          <div className="brend-box">
+            <img src="/public/imgs/mi.png" alt="" />
+          </div>
+          <div className="brend-box">
+            <img src="/public/imgs/lg.png" alt="" />
+          </div>
+          <div className="brend-box">
+            <img src="/public/imgs/samsung.png" alt="" />
             <img src="/public/imgs/brend.png" alt="" />
           </div>
           <div className="brend-box">
