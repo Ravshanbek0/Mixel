@@ -253,21 +253,14 @@ function Home({ setLoader }) {
             <img src="/public/imgs/lg.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="https://images.samsung.com/is/image/samsung/assets/uz_ru/about-us/brand/logo/mo/256_144_1.png?$512_N_PNG$" alt="" />
+            <img src="/public/imgs/samsung.png" alt="" />
+            
+          </div>
+          <div className="brend-box">
+            
             <img src="/public/imgs/brend.png" alt="" />
           </div>
-          <div className="brend-box">
-            <img src="/public/imgs/mi.png" alt="" />
-          </div>
-          <div className="brend-box">
-            <img src="/public/imgs/lg.png" alt="" />
-          </div>
-          <div className="brend-box">
-            <img src="/public/imgs/samsung.png" alt="" />
-          </div>
-          <div className="brend-box">
-            <img src="/public/imgs/artel.png" alt="" />
-          </div>
+          
         </div>
       </div>
     </div >
