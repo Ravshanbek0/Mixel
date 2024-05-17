@@ -66,10 +66,10 @@ function Home({ setLoader }) {
           className="mySwiper"
         >
           <div className="container">
-            <SwiperSlide><img src="/public/imgs/header.png" alt="" /></SwiperSlide>
-            <SwiperSlide><img src="/public/imgs/header.png" alt="" /></SwiperSlide>
-            <SwiperSlide><img src="/public/imgs/header.png" alt="" /></SwiperSlide>
-            <SwiperSlide><img src="/public/imgs/header.png" alt="" /></SwiperSlide>
+            <SwiperSlide><img src="./imgs/header.png" alt="" /></SwiperSlide>
+            <SwiperSlide><img src="./imgs/header.png" alt="" /></SwiperSlide>
+            <SwiperSlide><img src="./imgs/header.png" alt="" /></SwiperSlide>
+            <SwiperSlide><img src="./imgs/header.png" alt="" /></SwiperSlide>
           </div>
         </Swiper>
 
@@ -106,20 +106,20 @@ function Home({ setLoader }) {
         <div className="category">
           <div>
             <h1>Компьютеры</h1>
-            <img src="/public/imgs/laptop.png" alt="" />
+            <img src="./imgs/laptop.png" alt="" />
           </div>
           <div>
             <h1>Телефоны, <br />
               планшеты</h1>
-            <img src="/public/imgs/phone.png" alt="" />
+            <img src="./imgs/phone.png" alt="" />
           </div>
           <div>
             <h1>Ноутбуки</h1>
-            <img src="/public/imgs/laptops2.png" alt="" />
+            <img src="./imgs/laptops2.png" alt="" />
           </div>
           <div>
             <h1>Товары для офиса</h1>
-            <img src="/public/imgs/camera.png" alt="" />
+            <img src="./imgs/camera.png" alt="" />
           </div>
 
         </div>
@@ -244,21 +244,21 @@ function Home({ setLoader }) {
         </div>
         <div className="brend">
           <div className="brend-box">
-            <img src="/public/imgs/brend.png" alt="" />
+            <img src="./imgs/brend.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="/public/imgs/mi.png" alt="" />
+            <img src="./imgs/mi.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="/public/imgs/lg.png" alt="" />
+            <img src="./imgs/lg.png" alt="" />
           </div>
           <div className="brend-box">
-            <img src="/public/imgs/samsung.png" alt="" />
+            <img src="./imgs/samsung.png" alt="" />
             
           </div>
           <div className="brend-box">
             
-            <img src="/public/imgs/brend.png" alt="" />
+            <img src="./imgs/brend.png" alt="" />
           </div>
           
         </div>

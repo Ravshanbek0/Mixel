@@ -7,7 +7,7 @@ function Footer() {
       <div className="container">
         <div className="footer-div">
           <div className='footer-1'>
-            <img src="/public/imgs/logoWhite.png" alt="" />
+            <img src="./imgs/logoWhite.png" alt="" />
             <p>График работы колл-центра
               Понедельник - Суббота: 9:00–18:00</p>
             <p>Колл-центр:
