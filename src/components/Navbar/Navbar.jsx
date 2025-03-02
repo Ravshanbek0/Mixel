@@ -60,7 +60,7 @@ function Navbar({ setLoader, setInputValue, setModal, user, setToken }) {
             <div className='container' >
 
                 <nav className="nav-bar">
-                    <Link to={'/'}><img src="./imgs/logo.png" alt="" className="logo-img" /></Link>
+                    <div><Link to={'/'}><img src="../imgs/logo.png" alt="" className="logo-img" /></Link></div>
                     <div className="nav-search">
                         <select value={pathname} onChange={shared} name="" id="select">
                             <option value="/filter/all">Все категории</option>

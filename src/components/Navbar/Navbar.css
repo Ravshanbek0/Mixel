@@ -89,7 +89,9 @@
 .micro-scan {
     position: absolute;
     z-index: 3;
-    left: 450px;
+    /* left: 450px; */
+    right: 120px;
+    display: none;
 }
 
 .nav-search button {
@@ -143,7 +145,8 @@
     font-size: 18px;
     cursor: pointer;
 }
-.modal-nav{
+
+.modal-nav {
     position: fixed;
     z-index: 9598959;
     background-color: rgba(0, 0, 0, 0.493);
@@ -154,7 +157,8 @@
     justify-content: center;
     align-items: center;
 }
-.modal-box{
+
+.modal-box {
     width: 450px;
     min-height: 400px;
     background-color: white;
@@ -166,22 +170,194 @@
     gap: 15px;
     position: relative;
 }
-.modal-box label{
+
+.modal-box label {
     font-size: 19px;
     border-bottom: 1px solid gray;
     font-weight: 600;
     padding: 2px;
 }
-.modal-box label span{
+
+.modal-box label span {
     color: #ED3729;
     font-size: 18px;
     font-weight: 500;
     margin-left: 15px;
 }
-.modal-box p{
+
+.modal-box p {
     top: 10px;
     right: 15px;
     position: absolute;
     font-weight: 600;
     cursor: pointer;
 }
+
+@media screen and (max-width:1284px) {
+    .nav-red ul,
+    .nav-red div {
+        display: none;
+    }
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .extras{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+
+    .nav-red ul,
+    .nav-red div {
+        display: none;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .infos{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px !important;
+    }
+    .infos li{
+        border: 1px solid red;
+        padding: 2px;
+        border-radius: 8px;
+    }
+    .infos p{
+        display: none !important;
+    }
+    .nav-search {
+        width: 100%;
+    }
+    .extras{
+        margin-top: 15px;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 768px) {
+    .header .infos {
+        display: none;
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .extras {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header .infos {
+        display: none;
+    }
+    .micro-scan{
+        display: none;
+    }
+    .nav-search button{
+        width: 80px;
+    }
+    .logo-img {
+        width: 150px;
+        object-fit: contain;
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .extras {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+    #select {
+        width: 80px;
+        margin-left: 0;
+        left: 5px;
+    }
+
+    .nav-search input {
+        padding-left: 90px;
+    }
+}
+
+/* @media screen and (max-width:1080px) {
+    .nav-bar {
+        top: 0;
+        z-index: 99999999;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .nav-red {
+        display: none;
+    }
+
+    .red-nav {
+        display: none;
+    }
+
+    .extras {
+        display: none;
+    }
+
+    .logo-img {
+        width: 130px;
+        object-fit: contain;
+    }
+
+    .nav-search select {
+        display: none;
+    }
+
+    .nav-search {
+        width: 250px;
+        height: 35px;
+        border: 1px solid #ED3729;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav-search input {
+        padding-left: 10px;
+    }
+
+    .nav-search button {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        width: 70px;
+        height: 40px;
+        border: none;
+        color: #fff;
+        background-color: #ED3729;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+} */

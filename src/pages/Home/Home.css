@@ -26,9 +26,11 @@
     align-items: center;
     font-size: 14px;
 }
-.infos p span{
+
+.infos p span {
     font-size: 18px;
 }
+
 .infos li {
     font-size: 14px;
 }
@@ -36,9 +38,11 @@
 .infos li a {
     color: #000000;
 }
-.infos li a.active{
+
+.infos li a.active {
     color: #ED3729;
 }
+
 .infos li a:hover {
     color: #ED3729;
     transition: all .2s;
@@ -70,7 +74,6 @@
     height: auto;
     align-items: center;
     margin-top: 50px;
-    gap: 30px;
     margin-bottom: 40px;
     overflow: hidden;
 }
@@ -224,7 +227,98 @@
     justify-content: center;
     align-items: center;
 }
-.brend-box:hover{
+
+.brend-box:hover {
     box-shadow: 0px 2px 20px 0px #0000001A;
 
+}
+@media (max-width:1230px){
+    .category{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .infos{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 1024px) {
+    .category {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .garyashei{
+        margin-top: 15px;
+    }
+    .category-title{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .gar-info h1 {
+        font-size: 18px;
+    }
+    .sell-boxes {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sell-left,
+    .sell-right {
+        margin-right: 0;
+    }
+
+    .sell-between {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .infos {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .category{
+        display: none;
+    }
+    .gar-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .brend {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .brend-box {
+        width: 150px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sell h1 {
+        font-size: 24px;
+    }
+
+    .sell p {
+        font-size: 14px;
+    }
+
+    .sell-right h1 {
+        font-size: 20px;
+    }
+
+    .sell-right p {
+        font-size: 16px;
+    }
+
+    .sell-right a {
+        width: 150px;
+        font-size: 14px;
+    }
 }

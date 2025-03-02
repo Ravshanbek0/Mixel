@@ -32,6 +32,32 @@ body {
   width: 100%;
   object-fit: contain;
 }
-.mySwiper{
+
+.mySwiper {
   height: auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Swiper uchun responsive */
+@media (max-width: 1024px) {
+  .mySwiper {
+    slidesPerView: 2 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mySwiper {
+    slidesPerView: 1 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .mySwiper {
+    slidesPerView: 1 !important;
+    spaceBetween: 10px !important;
+  }
 }

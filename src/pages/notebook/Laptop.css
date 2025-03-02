@@ -3,7 +3,8 @@
     margin-top: 50px;
     gap: 30px;
 }
-.laptop-main-box{
+
+.laptop-main-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,11 +12,13 @@
     height: 360px;
     overflow: hidden;
 }
-.laptop-main-box img{
+
+.laptop-main-box img {
     width: 360px;
     object-fit: contain;
     height: 350px;
 }
+
 .laptop-imgs {
     width: 360px;
     overflow: hidden;
@@ -108,7 +111,8 @@
     padding: 15px;
     margin-top: 54px;
 }
-.laptop-top-infos h5 span{
+
+.laptop-top-infos h5 span {
     width: 50px;
     height: 25px;
     color: white;
@@ -118,6 +122,7 @@
     margin-top: 5px;
     background-color: red;
 }
+
 .laptop-top-infos p {
     font-size: 14px;
     font-weight: 400;
@@ -174,4 +179,74 @@
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+@media (max-width: 1024px) {
+    .laptop {
+        flex-direction: column;
+        align-items: center;
+    }
+    .laptop-right {
+        flex-direction: column;
+        width: 100%;
+    }
+    .laptop-right2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .right2-extras{
+        width: 340px;
+    }
+    .laptop-main-box,
+    .laptop-imgs {
+        width: 100%;
+    }
+
+    .laptop-right-left h1 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    .laptop-sum-icons {
+        gap: 30px;
+    }
+
+    .laptop-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .laptop-button1,
+    .laptop-button2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .laptop-main-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .laptop-imgs {
+        gap: 10px;
+    }
+
+    .right2-extras {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1440px) {
+    .laptop {
+        flex-direction: column;
+        align-items: center;
+    }
 }

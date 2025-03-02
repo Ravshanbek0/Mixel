@@ -218,9 +218,166 @@
     height: 50px;
 }
 
-.gar-cards{
+.gar-cards {
     justify-content: center;
     /* border: 1px solid;    */
     display: flex;
     padding: 0;
+}
+.filter-btn{
+    display: none;
+}
+.filter-modal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.516);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 879789789797897979879797897;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:1300px) {
+    .gar-card{
+        width: 240px;
+    }
+}
+@media (max-width: 1024px) {
+    .filter-modal2{
+        display: block !important;
+        background-color: #E0E0E0;
+    }
+    .telephones-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .filter-btn{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+        color: #909090;
+        cursor: pointer;
+    }
+    .gar-card{
+        width: 240px;
+    }
+    .telephones-nav>h1 {
+        width: 100%;
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .telephones-right-main-box {
+        margin-left: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content:center;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+    .filter-sen {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .filter-button {
+        display: block;
+        background-color: #ED3927;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .telephones-left-box {
+        display: none;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 400px;
+    }
+}
+.filter-x{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #BDBDBD;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .telephones-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxe-icon{
+        display: none;
+    }
+    .telephones-left-box {
+        width: 100%;
+    }
+
+    .telephones-right-main-box {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .tel-box1 div {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* 1025px va undan katta ekranlar uchun */
+@media (min-width: 1025px) {
+    .telephones-left-box {
+        display: block !important;
+        /* Katta ekranlarda ko‘rinishi kerak */
+    }
+
+    .modal {
+        display: none !important;
+        /* Modal o‘chirildi */
+    }
+
+    .filter-button {
+        display: none !important;
+        /* Filter tugmasi yo‘q bo‘lsin */
+    }
+}
+@media (max-width:480px) {
+    .telephones-nav>h1 {
+        width: 100%;
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        margin-right: 0;
+    }
 }

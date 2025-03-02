@@ -82,8 +82,12 @@ function Home({ setLoader }) {
           </div>
           <div className="gar-cards">
             <Swiper
-              slidesPerView={4}
-              spaceBetween={20}
+              breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                480: { slidesPerView: 2, spaceBetween: 15 },
+                768: { slidesPerView: 3, spaceBetween: 20 },
+                1024: { slidesPerView: 4, spaceBetween: 20 },
+              }}
               // centeredSlides={true}
               autoplay={{
                 delay: 2500,
@@ -125,7 +129,7 @@ function Home({ setLoader }) {
         </div>
       </div>
 
-   
+
       <div className="sell">
         <Swiper
           spaceBetween={30}
@@ -159,7 +163,7 @@ function Home({ setLoader }) {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="sell-boxes">
                 <div className='sell-left'>
                   <h1>Apple iPhone X 64 ГБ</h1>
@@ -189,7 +193,7 @@ function Home({ setLoader }) {
                   <p>2 220  900 Сум</p>
                   <a href="">Показать еще</a>
                 </div>
-              </div></SwiperSlide>
+              </div></SwiperSlide> */}
             <SwiperSlide>
               <div className="sell-boxes">
                 <div className='sell-left'>
@@ -219,8 +223,12 @@ function Home({ setLoader }) {
         </div>
         <div className="gar-cards">
           <Swiper
-            slidesPerView={4}
-            spaceBetween={20}
+            breakpoints={{
+              320: { slidesPerView: 1, spaceBetween: 10 },
+              480: { slidesPerView: 2, spaceBetween: 15 },
+              768: { slidesPerView: 3, spaceBetween: 20 },
+              1024: { slidesPerView: 4, spaceBetween: 20 },
+            }}
             freeMode={true}
             autoplay={{
               delay: 2500,
@@ -229,11 +237,12 @@ function Home({ setLoader }) {
             modules={[Autoplay, FreeMode, Pagination]}
             className="mySwiper"
           >
-            {data2 && data2.map((item) => {
-              return <SwiperSlide><ToolCard item={item} /></SwiperSlide>
-            })}
-
-
+            {data2 &&
+              data2.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <ToolCard item={item} />
+                </SwiperSlide>
+              ))}
           </Swiper>
 
         </div>
@@ -254,13 +263,13 @@ function Home({ setLoader }) {
           </div>
           <div className="brend-box">
             <img src="./imgs/samsung.png" alt="" />
-            
+
           </div>
           <div className="brend-box">
-            
+
             <img src="./imgs/brend.png" alt="" />
           </div>
-          
+
         </div>
       </div>
     </div >

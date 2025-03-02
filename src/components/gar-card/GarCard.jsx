@@ -15,7 +15,7 @@ function GarCard({ item }) {
                 <div className="discount">-{item?.discount?.amount}%</div>
                 <Link to={`/card/${item?.id}`}><img src={`https://ecommerce0003.pythonanywhere.com/${item?.img_main}`} alt="" /></Link>
                 <h3><span>{item?.price} сум</span>  {item?.price - (item?.price * (item?.discount?.amount / 100))} сум</h3>
-                <h1>{item?.name?.slice(0,40)}... </h1>
+                <h1>{item?.name?.slice(0, 40)}... </h1>
                 <p>Предложение заканчивается через:</p>
                 <div className="minutes">
                     <h4><span id="minute-num">27</span> <span className='minute-text' >ДНЕЙ</span> </h4>
