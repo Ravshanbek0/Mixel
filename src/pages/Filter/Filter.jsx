@@ -29,7 +29,7 @@ import { Modal } from '@mui/material';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
-function Filter({ setLoader, inputValue }) {
+function Filter({ setLoader, inputValue ,handleLike}) {
     const { type } = useParams()
     ////////////////////////////////////Get//////////////////////////////////////////////////
     const [product, setProduct] = useState([])
@@ -126,7 +126,6 @@ function Filter({ setLoader, inputValue }) {
         var newObj = filter_brand.filter((item) => {
             return filter_country.includes(item) && filter_price.includes(item)
         })
-        console.log(newObj);
         setProduct(newObj)
     }
 
@@ -508,7 +507,7 @@ function Filter({ setLoader, inputValue }) {
                     <div className="telephones-right-box">
                         <div className={isActive ? "telephones-right-main-box active" : "telephones-right-main-box"}>
                             {product?.map((item) => {
-                                return <ToolCard item={item} isActive={isActive} />
+                                return <ToolCard handleLike={handleLike} item={item} isActive={isActive} />
                             })}
 
                         </div>

@@ -6,7 +6,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import { SlBasket } from "react-icons/sl";
 import { Link } from 'react-router-dom';
 
-function GarCard({ item }) {
+function GarCard({ item, handleLike }) {
 
     return (
         <>
@@ -25,7 +25,9 @@ function GarCard({ item }) {
                 </div>
                 <div className="gar-icons">
                     <span><SlBasket className='gar-iconb red' /></span>
-                    <span ><FaRegHeart className='gar-iconb' /></span>
+                    <span onClick={() => {
+                        handleLike(item.id)
+                    }} ><FaRegHeart className='gar-iconb' /></span>
                     <span><FaBalanceScale className='gar-iconb' /></span>
                 </div>
             </div>

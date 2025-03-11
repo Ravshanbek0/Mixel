@@ -17,7 +17,7 @@ import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-function Home({ setLoader }) {
+function Home({ setLoader, handleLike }) {
   const [data1, setData1] = useState([])
   const [data2, setData2] = useState([])
   async function getData(params) {
@@ -78,7 +78,7 @@ function Home({ setLoader }) {
         <div className="garyashei">
           <div className="gar-info">
             <h1>Горящие предложения</h1>
-            <a href="">Посмотреть все <FaLongArrowAltRight /></a>
+            <Link to={'/filter/all'}>Посмотреть все <FaLongArrowAltRight /></Link>
           </div>
           <div className="gar-cards">
             <Swiper
@@ -96,8 +96,8 @@ function Home({ setLoader }) {
               modules={[Autoplay, FreeMode, Pagination]}
               className="mySwiper"
             >
-              {data1 && data1.map((item) => {
-                return <SwiperSlide><GarCard item={item} /></SwiperSlide>
+              {data1 && data1.map((item,index) => {
+                return <SwiperSlide><GarCard key={index} handleLike={handleLike} item={item} /></SwiperSlide>
               })}
 
 
@@ -219,7 +219,7 @@ function Home({ setLoader }) {
       <div className="container">
         <div className="gar-info">
           <h1>Товары дешевле:</h1>
-          <a href="">Посмотреть все <FaLongArrowAltRight /></a>
+          <Link to={'/filter/all'}>Посмотреть все <FaLongArrowAltRight /></Link>
         </div>
         <div className="gar-cards">
           <Swiper
@@ -240,7 +240,7 @@ function Home({ setLoader }) {
             {data2 &&
               data2.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <ToolCard item={item} />
+                  <ToolCard handleLike={handleLike} item={item} />
                 </SwiperSlide>
               ))}
           </Swiper>

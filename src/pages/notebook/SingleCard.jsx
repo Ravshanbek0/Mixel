@@ -53,8 +53,8 @@ function Laptop({ setLoader }) {
                             <img src={`https://ecommerce0003.pythonanywhere.com/${mainImg}`} alt="" />
                         </div>
                         <div className="laptop-imgs">
-                            {laptopItem.img_sub?.map((item) => {
-                                return <img onClick={() => {
+                            {laptopItem.img_sub?.map((item,index) => {
+                                return <img key={index} onClick={() => {
                                     window.scrollTo({
                                         top: 51
                                     })

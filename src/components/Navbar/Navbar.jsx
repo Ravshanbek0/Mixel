@@ -11,7 +11,7 @@ import { MdMenu } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 
-function Navbar({ setLoader, setInputValue, setModal, user, setToken }) {
+function Navbar({ setLoader, setInputValue, setModal, user, setToken, likeData }) {
     const navigate = useNavigate()
     const [navModal, setNavModal] = useState(false)
     const { pathname } = useLocation()
@@ -99,16 +99,15 @@ function Navbar({ setLoader, setInputValue, setModal, user, setToken }) {
 
                         }
 
+                        <Link to={"/likeProducts"}>
+                            <div>
+                                <h4 className="red-cirlce">{likeData?.length}</h4>
+                                <span className="icons-extra"><FaRegHeart /></span> Избранное
+                            </div>
+                        </Link>
+
                         <div>
-                            <h4 className="red-cirlce">12</h4>
-                            <span className="icons-extra"><FaBalanceScale /></span> Сравнение
-                        </div>
-                        <div>
-                            <h4 className="red-cirlce">12</h4>
-                            <span className="icons-extra"><FaRegHeart /></span> Избранное
-                        </div>
-                        <div>
-                            <h4 className="red-cirlce">12</h4>
+                            <h4 className="red-cirlce">0</h4>
                             <span className="icons-extra"><SlBasket /></span> Корзина
                         </div>
                         {user?.username && <p><div onClick={() => {

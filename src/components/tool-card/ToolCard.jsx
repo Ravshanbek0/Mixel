@@ -5,7 +5,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import { SlBasket } from "react-icons/sl";
 import { Link } from 'react-router-dom';
 
-function ToolCard({ isActive, item }) {
+function ToolCard({ isActive, item,handleLike }) {
     return (
         <div>
             <div className={isActive ? 'gar-card tool active' : 'gar-card tool'}>
@@ -18,7 +18,9 @@ function ToolCard({ isActive, item }) {
 
                 <div className="gar-icons tool-top">
                     <span><SlBasket className='gar-iconb red' /></span>
-                    <span ><FaRegHeart className='gar-iconb' /></span>
+                    <span onClick={()=>{
+                        handleLike(item?.id)
+                    }} ><FaRegHeart className='gar-iconb' /></span>
                     <span><FaBalanceScale className='gar-iconb' /></span>
                 </div>
             </div>

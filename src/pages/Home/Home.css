@@ -64,6 +64,8 @@
 .gar-info a {
     color: #909090;
     font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -259,6 +261,7 @@
     .gar-info h1 {
         font-size: 18px;
     }
+    
     .sell-boxes {
         flex-direction: column;
         align-items: center;

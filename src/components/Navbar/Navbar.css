@@ -124,6 +124,7 @@
     align-items: center;
     position: relative;
     font-size: 14px;
+    color: black;
 }
 
 .red-cirlce {
@@ -281,11 +282,16 @@
     }
 
     .extras {
-        flex-direction: column;
         gap: 10px;
-        display: none;
+        display: flex;
+        gap: 12px;
     }
-
+.extras div{
+    font-size: 12px;
+}
+.icons-extra{
+    font-size: 14px;
+}
     #select {
         width: 80px;
         margin-left: 0;

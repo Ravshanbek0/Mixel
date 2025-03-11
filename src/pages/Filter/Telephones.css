@@ -259,6 +259,7 @@
         position: absolute;
         right: 20px;
         top: 0px;
+        font-size: 25px;
         color: #909090;
         cursor: pointer;
     }
